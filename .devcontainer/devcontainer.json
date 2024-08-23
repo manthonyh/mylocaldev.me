@@ -1,0 +1,22 @@
+{
+    "name": "Cloud Enablement Dev Container - Terraform",
+    "image": "mcr.microsoft.com/devcontainers/universal:2",
+    "hostRequirements": {
+        "cpus": 2,
+        "memory": "4gb",
+        "storage": "32gb"
+    },
+    "features": {
+        "ghcr.io/devcontainers/features/terraform:1": {},
+        "ghcr.io/devcontainers/features/azure-cli:1": {}
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "zaaack.markdown-editor",
+                "ms-azuretools.vscode-azureterraform",
+                "hashicorp.terraform"
+            ]
+        }
+    }
+}
